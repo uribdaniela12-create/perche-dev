@@ -24,6 +24,236 @@
     </header>
     <main id="contenido">
         <h1>Inscripcion</h1>
+         <p>
+         La entrada es gratuita y los cupos son limitados.
+         Completa el formulario para reservar el tuyo.
+         </p>
+
+         <p>Los campos marcados con * son obligatorios.</p>
+
+         <form action="gracias.html" method="get">
+            <fieldset>
+
+           <legend>Tus datos</legend>
+
+            <p>
+           <label for="nombre">Nombre completo *</label>
+           <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required>
+           </p>
+
+           <p>
+          <label for="correo">Correo electrónico *</label>
+           <input
+            type="email"
+            id="correo"
+            name="correo"
+            required>
+           </p>
+
+          <p>
+          <label for="celular">Celular (10 dígitos, empieza por 3)</label>
+          <input
+            type="tel"
+            id="celular"
+            name="celular"
+            pattern="3[0-9]{9}">
+           </p>
+           <p>
+         <label for="ciudad">Ciudad</label>
+
+          <select id="ciudad" name="ciudad">
+         <option value="">Selecciona una ciudad</option>
+         <option value="medellin">Medellín</option>
+         <option value="bello">Bello</option>
+         <option value="itagui">Itagüí</option>
+         <option value="envigado">Envigado</option>
+         <option value="sabaneta">Sabaneta</option>
+         <option  value="la-estrella">La Estrella</option>
+         <option value="caldas">Caldas</option>
+         <option value="copacabana">Copacabana</option>
+         <option value="girardota">Girardota</option>
+         <option value="barbosa">Barbosa</option>
+         <option value="otra">Otra</option>
+          </select>
+         </p>
+
+          </fieldset>
+          <fieldset>
+
+         <legend>¿En qué momento estás? *</legend>
+
+         <p>
+         <input
+            type="radio"
+            id="momento-empezando"
+            name="momento"
+            value="empezando"
+            required>
+         <label for="momento-empezando">
+            Estoy empezando a programar
+         </label>
+         </p>
+
+         <p>
+         <input
+            type="radio"
+            id="momento-programo"
+            name="momento"
+            value="programo">
+         <label for="momento-programo">
+            Ya programo, pero no trabajo en tecnología
+         </label>
+          </p>
+
+         <p>
+          <input
+            type="radio"
+            id="momento-trabajo"
+            name="momento"
+            value="trabajo">
+         <label for="momento-trabajo">
+            Trabajo en tecnología
+         </label>
+         </p>
+
+         </fieldset>
+         <fieldset>
+
+         <legend>¿Qué temas te interesan?</legend>
+
+         <p>
+         <input
+            type="checkbox"
+            id="tema-web"
+            name="temas"
+            value="desarrollo-web">
+         <label for="tema-web">
+            Desarrollo web
+         </label>
+          </p>
+
+         <p>
+         <input
+            type="checkbox"
+            id="tema-datos"
+            name="temas"
+            value="datos-sql">
+         <label for="tema-datos">
+            Datos y SQL
+         </label>
+         </p>
+
+         <p>
+         <input
+            type="checkbox"
+            id="tema-accesibilidad"
+            name="temas"
+            value="accesibilidad">
+         <label for="tema-accesibilidad">
+            Accesibilidad
+         </label>
+          </p>
+
+         <p>
+         <input
+            type="checkbox"
+            id="tema-python"
+            name="temas"
+            value="python">
+         <label for="tema-python">
+            Python
+         </label>
+         </p>
+
+         <p>
+         <input
+            type="checkbox"
+            id="tema-nube"
+            name="temas"
+            value="despliegue-nube">
+         <label for="tema-nube">
+            Despliegue en la nube
+         </label>
+          </p>
+
+         </fieldset>
+         <fieldset>
+
+         <legend>Agenda</legend>
+
+         <p>
+         <input
+            type="checkbox"
+            id="taller-python"
+            name="taller-python"
+            value="si">
+         <label for="taller-python">
+            Quiero inscribirme al taller “Tu primer bot con Python”
+            (30 cupos, trae tu computador)
+         </label>
+         </p>
+
+         <p>
+         <label for="talla">Talla de camiseta</label>
+
+         <select id="talla"  name="talla">
+            <option value="">Selecciona una talla</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          </p>
+
+         </fieldset>
+         <fieldset>
+
+         <legend>Cuéntanos un poco más</legend>
+
+         <p>
+         <label for="aprendizaje">
+            ¿Qué esperas aprender en Parche Dev?
+         </label>
+         </p>
+
+         <p>
+         <textarea
+            id="aprendizaje"
+            name="aprendizaje"
+            maxlength="300"
+            rows="5"
+            cols="40"></textarea>
+          </p>
+
+         </fieldset>
+
+         <p>
+         <input
+         type="checkbox"
+         id="conducta"
+         name="conducta"
+          value="acepto"
+         required>
+
+         <label for="conducta">
+          Acepto el
+         <a href="conducta.html">código de conducta</a>
+         del evento *
+         </label>
+         </p>
+
+         <p>
+         <button type="submit">Reservar mi cupo</button>
+         </p>
+
+         </form>
+
     </main>
     <footer>
         <address>
