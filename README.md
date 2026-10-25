@@ -28,3 +28,18 @@ Durante la actividad también tuve algunos errores con Git y GitHub al momento d
 
 Por último revisé los archivos, corregí algunos errores del HTML y completé el README con la información del proyecto, algunas decisiones que tomé y lo que aprendí durante la actividad.
 
+Pruebas con Lighthouse
+
+Revisé las páginas principales en modo celular usando Lighthouse.
+
+Inicio
+
+![Lighthouse inicio](img/lighthouse/inicio.png)
+
+Agenda
+
+![Lighthouse agenda](img/lighthouse/agenda.png)
+
+Inscripción
+
+![Lighthouse inscripción](img/lighthouse/inscripcion.png)
